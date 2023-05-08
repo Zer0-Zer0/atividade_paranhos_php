@@ -1,7 +1,6 @@
 <?php
 extract($_POST);
 if (isset($send)) {
-    $decimal = $decimal > 3999 ? 3999 : abs($decimal);
     $length = $decimal !== 0 ? floor(log10($decimal) + 1) : 1;
 
     function number_builder($a, $b, $c)
