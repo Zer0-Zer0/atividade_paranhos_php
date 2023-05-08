@@ -125,7 +125,7 @@
             </div>
 
             <h1>outros alunos</h1>
-            <div class="flex_grid">
+            <div class="center_flex flex_grid">
                 <?php read_data();?>
             </div>
         </div>
