@@ -1,4 +1,5 @@
 <?php
+function add_classmate(){
 extract($_POST);
 if (isset($send)) {
     $file = fopen("../_data/cores.dat", "a");
@@ -14,7 +15,7 @@ if (isset($send)) {
 
     $media = ($n1 + $n2 + $n3) / 3;
 
-    $data_w .= "$media";
+    $data_w .= "$media ";
 
     fwrite($file, $data_w);
 
@@ -27,4 +28,5 @@ if (isset($send)) {
     }
 
     echo $screen_out;
+}
 }

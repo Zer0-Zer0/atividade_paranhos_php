@@ -5,6 +5,10 @@
     <?php
     include("../_templates/echoer.php");
     include("../_templates/head.php");
+
+    include("code.php");
+    include("read.php");    
+
     head_constructor("Calculo de média");
     ?>
     <script src="/_js/clamp.js"></script>
@@ -13,8 +17,8 @@
 <body>
     <?php show("../_templates/header.html"); ?>
 
-    <main>
-        <div class="center_abs">
+    <main class="fillup">
+        <div class="center_flex flex_column">
             <div class="box">
                 <h1>
                     CORES
@@ -117,9 +121,12 @@
             </div>
             <div class="box">
                 <p>Resultado: </p>
-                <?php
-                include("code.php");
-                ?>
+                <?php add_classmate(); ?>
+            </div>
+
+            <div class="box">
+                <p>outros alunos </p>
+                <?php read_data();?>
             </div>
         </div>
     </main>
