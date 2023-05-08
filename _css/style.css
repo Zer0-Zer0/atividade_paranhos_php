@@ -56,6 +56,18 @@ main {
     height: max-content;
 }
 
+label,
+input,
+p {
+    margin: 1em;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    max-width: 16em;
+}
+
 .hidden {
     display: none;
 }
@@ -75,7 +87,7 @@ main {
     padding: 1em;
     margin: 1em;
 
-    border: 1px solid black;
+    border: 1px solid var(--p-black-01);
 
     background-color: var(--p-white-01);
 }
@@ -91,6 +103,8 @@ main {
 
     width: 5em;
     height: 5em;
+
+    border: 1px solid var(--p-black-01);
 
     background-color: var(--p-white-01);
     aspect-ratio: 1/1;
@@ -108,7 +122,7 @@ main {
     margin: 1em;
 }
 
-div.formulary {
+.formulary {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -116,18 +130,6 @@ div.formulary {
 
 .mono {
     font: 1em "mono";
-}
-
-label,
-input,
-p {
-    margin: 1em;
-}
-
-input[type="text"],
-input[type="tel"],
-input[type="email"] {
-    max-width: 16em;
 }
 
 .center_abs {
