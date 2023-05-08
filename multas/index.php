@@ -20,15 +20,15 @@
                 <h1>Calculadora de multas</h1>
 
                 <form method="post">
-                    <div class="input_combo">
+                    <div class="input_combo formulary">
                         <label for="via">Velocidade máxima da via</label>
                         <input type="number" name="via">
                     </div>
-                    <div class="input_combo">
+                    <div class="input_combo formulary">
                         <label for="veiculo">Velocidade do veículo</label>
                         <input type="number" name="veiculo">
                     </div>
-                    <div class="input_combo">
+                    <div class="input_combo formulary">
                         <input type="submit" name="send" value="Calcular">
                     </div>
                 </form>
@@ -37,7 +37,7 @@
                 <p>Resultado: </p>
 
                 <?php
-                    fine_calc();
+                fine_calc();
                 ?>
             </div>
         </div>
