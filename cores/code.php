@@ -1,6 +1,8 @@
 <?php
 extract($_POST);
 if (isset($send)) {
+    $file = fopen("../_data/cores.dat", "a");
+
     $data_w = ". $nome ";
     $data_w .= "$matricula ";
     $data_w .= "$turma ";
@@ -10,5 +12,19 @@ if (isset($send)) {
     $data_w .= "$n2 ";
     $data_w .= "$n3 ";
 
-    file_put_contents("/_data/cores.dat", $data_w);
+    $media = ($n1 + $n2 + $n3) / 3;
+
+    $data_w .= "$media";
+
+    fwrite($file, $data_w);
+
+    fclose($file);
+
+    if ($media >= 6) {
+        $screen_out = "$nome foi aprovado com a média $media";
+    } else {
+        $screen_out = "$nome foi reprovado com a média $media";
+    }
+
+    echo $screen_out;
 }
