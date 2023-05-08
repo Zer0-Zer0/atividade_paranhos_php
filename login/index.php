@@ -17,19 +17,19 @@
             <form method="post" action="/login/code.php" class="box">
                 <h1>Seja bem-vindo!</h1>
 
-                <div class="formulary">
+                <div class="flex_row">
                     <label for="username">
                         Usuário
                     </label>
                     <input type="text" name="username">
                 </div>
-                <div class="formulary">
+                <div class="flex_row">
                     <label for="password">
                         Senha
                     </label>
                     <input type="password" name="password">
                 </div>
-                <div class="formulary">
+                <div class="flex_row">
                     <input type="submit" name="send" value="Entrar">
                 </div>
             </form>

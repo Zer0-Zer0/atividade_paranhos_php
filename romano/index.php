@@ -24,7 +24,7 @@
             <div class="box">
                 <h1>números arábicos para romanos</h1>
 
-                <form method="post" class="formulary">
+                <form method="post" class="flex_row">
                     <label for="decimal">1-3999</label>
                     <input onchange="clamp(this,1,3999)" type="number" name="decimal" required>
                 </form>
@@ -32,7 +32,7 @@
             </div>
 
             <div class="box">
-                <div class="formulary">
+                <div class="flex_row">
                     <p>Resultado: </p>
 
                     <div id="out">

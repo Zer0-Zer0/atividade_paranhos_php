@@ -136,6 +136,41 @@ button:hover {
     background-color: var(--p-white-01);
 }
 
+.mono {
+    font: 1em "mono";
+}
+
+.center_abs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_column {
+    flex-direction: column;
+}
+
+.flex_row {
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.no_deco,
+.no_deco:hover {
+    text-decoration: none;
+}
+
 #add_contact {
     -webkit-mask-image: url(../_img/plus_icon.webp);
     mask-image: url(../_img/plus_icon.webp);
@@ -162,36 +197,4 @@ button:hover {
     flex-wrap: wrap;
 
     margin: 1em;
-}
-
-.formulary {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.mono {
-    font: 1em "mono";
-}
-
-.center_abs {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.center_flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flex_column {
-    flex-direction: column;
-}
-
-.no_deco,
-.no_deco:hover {
-    text-decoration: none;
 }

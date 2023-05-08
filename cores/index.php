@@ -24,21 +24,21 @@
                     CORES
                 </h1>
                 <form method="post">
-                    <div class="formulary">
+                    <div class="flex_row">
                         <label for="nome">
                             Nome completo
                         </label>
                         <input type="text" name="nome" maxlength="64" required>
                     </div>
 
-                    <div class="formulary">
+                    <div class="flex_row">
                         <label for="matricula">
                             No. matrícula
                         </label>
                         <input maxlength=12 minlength=12 type="text" name="matricula" required>
                     </div>
 
-                    <div class="formulary">
+                    <div class="flex_row">
                         <label for="turma">
                             Turma
                         </label>
@@ -67,7 +67,7 @@
                         </select>
                     </div>
 
-                    <div class="formulary">
+                    <div class="flex_row">
                         <label for="materia">
                             Matéria
                         </label>
@@ -88,7 +88,7 @@
                         </select>
                     </div>
 
-                    <div class="formulary">
+                    <div class="flex_row">
                         <label for="unidade">
                             Unidade
                         </label>
@@ -99,17 +99,17 @@
                         </select>
                     </div>
 
-                    <div class="formulary">
+                    <div class="flex_row">
                         <label for="n1">Nota 1</label>
                         <input onchange="clamp(this, 0, 10)" step="0.1" type="number" name="n1" required>
                     </div>
 
-                    <div class="formulary">
+                    <div class="flex_row">
                         <label for="n2">Nota 2</label>
                         <input onchange="clamp(this, 0, 10)" step="0.1" type="number" name="n2" required>
                     </div>
 
-                    <div class="formulary">
+                    <div class="flex_row">
                         <label for="n3">Nota 3</label>
                         <input onchange="clamp(this, 0, 10)" step="0.1" type="number" name="n3" required>
                     </div>

@@ -20,15 +20,15 @@
                 <h1>Calculadora de multas</h1>
 
                 <form method="post">
-                    <div class="input_combo formulary">
+                    <div class="input_combo flex_row">
                         <label for="via">Velocidade máxima da via</label>
                         <input type="number" name="via">
                     </div>
-                    <div class="input_combo formulary">
+                    <div class="input_combo flex_row">
                         <label for="veiculo">Velocidade do veículo</label>
                         <input type="number" name="veiculo">
                     </div>
-                    <div class="input_combo formulary">
+                    <div class="input_combo flex_row">
                         <input type="submit" name="send" value="Calcular">
                     </div>
                 </form>

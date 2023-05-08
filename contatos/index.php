@@ -33,19 +33,19 @@
             <form id="create_new" class="center_abs hidden box" method="post">
                 <h1>Novo contato</h1>
 
-                <div class="formulary">
+                <div class="flex_row">
                     <label for="nome">Nome</label>
                     <input maxlength="64" type="text" name="name" required>
                 </div>
-                <div class="formulary">
+                <div class="flex_row">
                     <label for="email">Email</label>
                     <input maxlength="64" type="email" name="email" required>
                 </div>
-                <div class="formulary">
+                <div class="flex_row">
                     <label for="tel"> N° telefone</label>
                     <input maxlength="11" type="tel" name="tel" required>
                 </div>
-                <div class="formulary">
+                <div class="flex_row">
                     <label for="zap"> N° telefone (whatsapp)</label>
                     <input maxlength="11" type="tel" name="zap" required>
                 </div>
