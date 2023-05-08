@@ -175,6 +175,7 @@ button:hover {
 .flex_grid {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 
     margin: 1em;
 }
@@ -193,8 +194,8 @@ button:hover {
 
     mask-size: contain;
 
-    width: 5em;
-    height: 5em;
+    width: 2em;
+    height: 2em;
 
     background-color: var(--p-white-01);
     border: 0;

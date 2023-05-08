@@ -19,6 +19,6 @@ function echo_contacts()
                 </div>";
         }
     } else {
-        echo "<p>Atualmente você não tem nenhum contato salvo nessa agenda, clique no simbolo de soma para adicionar um novo contato.</p>";
+        echo "<p class='box'>Atualmente você não tem nenhum contato salvo nessa agenda, clique no simbolo de soma para adicionar um novo contato.</p>";
     }
 }

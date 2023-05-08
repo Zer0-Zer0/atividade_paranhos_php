@@ -12,7 +12,7 @@ function add_classmate()
     <div class='box square'>
         <h1>$nome</h1>
         <div class='flex_row'>
-            <p class='mono'>No de matrícula</p>
+            <p class='mono'>N° de matrícula</p>
             <p class='mono'>$matricula</p>
         </div>
         <div class='flex_row'>

@@ -35,7 +35,7 @@
 
                 <div class="flex_row">
                     <label for="nome">Nome</label>
-                    <input maxlength="64" type="text" name="name" required>
+                    <input maxlength="16" type="text" name="name" required>
                 </div>
                 <div class="flex_row">
                     <label for="email">Email</label>
