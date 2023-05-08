@@ -4,6 +4,7 @@
 <head>
     <?php
         include("../_templates/echoer.php");
+        
         include("../_templates/head.php");
         head_constructor("Acesso permitido");
     ?>

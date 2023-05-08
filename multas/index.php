@@ -4,6 +4,9 @@
 <head>
     <?php
     include("../_templates/echoer.php");
+
+    include("code.php");
+
     include("../_templates/head.php");
     head_constructor("Calculadora de multas");
     ?>
@@ -34,7 +37,7 @@
                 <p>Resultado: </p>
 
                 <?php
-                include("code.php");
+                    fine_calc();
                 ?>
             </div>
         </div>

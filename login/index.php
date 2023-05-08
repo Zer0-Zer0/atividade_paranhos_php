@@ -3,8 +3,9 @@
 
 <head>
     <?php
-    include("../_templates/head.php");
     include("../_templates/echoer.php");
+    
+    include("../_templates/head.php");
     head_constructor("Página de login");
     ?>
 </head>
