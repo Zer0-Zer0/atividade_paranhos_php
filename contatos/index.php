@@ -22,14 +22,14 @@
     ?>
 
     <main>
-        <div id="contact_list">
-            <?php echo_contacts(); ?>
-            <div>
-                <button onclick="toggle(document.getElementById('create_new'))" id="add_contact"></button>
-            </div>
-        </div>
-
         <div class="center_flex flex_column">
+            <div id="contact_list">
+                <?php echo_contacts(); ?>
+                <div>
+                    <button onclick="toggle(document.getElementById('create_new'))" id="add_contact"></button>
+                </div>
+            </div>
+
             <form id="create_new" class="center_abs hidden box" method="post">
                 <h1>Novo contato</h1>
 
