@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    font: 1em "Lucida Console", "Courier New", monospace;
+    background-color: #e5c085;
+}
+
+.box {
+    padding: 1rem;
+}
+
+.center_flex {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="number"] {
+    margin: auto;
+
+    width: 4em;
+}
+
+input[type="submit"] {
+    border-radius: 1em;
+}
+
+#out {
+    font-size: 4em;
+}

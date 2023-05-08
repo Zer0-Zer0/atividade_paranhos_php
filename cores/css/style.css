@@ -1,0 +1,99 @@
+body {
+    background: linear-gradient(90deg, #d0c5f9, #ecb9f7, #f3a3f7, #f17db8, #f68d9e, #f6a39f, #f9c3a2, #fdf1af);
+    background-size: 1800% 1800%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    background-color: #c89eff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px #f0e3ff;
+}
+
+h1 {
+    margin: 0;
+    font-size: 50px;
+    color: #f0e3ff;
+    font-family: "Segoe UI", sans-serif;
+    text-shadow: 4px 4px #c89eff;
+}
+
+button {
+    background-color: #f0e3ff;
+    color: #c89eff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 3px 3px #c89eff;
+}
+
+button:hover {
+    background-color: #c89eff;
+    color: #f0e3ff;
+}
+
+form {
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #c89eff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px #f0e3ff;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #f0e3ff;
+}
+
+input[type="text"],
+input[type="number"],
+option {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f0e3ff;
+    margin-bottom: 20px;
+    color: #c89eff;
+    box-shadow: 3px 3px #c89eff;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #f0e3ff;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+div:last-child {
+    margin-bottom: 0;
+}
