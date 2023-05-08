@@ -81,8 +81,8 @@ main {
 }
 
 .add_contact {
-    -webkit-mask-image: url(../img/plus_icon.webp);
-    mask-image: url(../img/plus_icon.webp);
+    -webkit-mask-image: url(../_img/plus_icon.webp);
+    mask-image: url(../_img/plus_icon.webp);
 
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;

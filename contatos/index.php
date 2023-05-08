@@ -3,10 +3,11 @@
 
 <head>
     <?php
-    include("contact_writer.php");
-    include("../_templates/head.php");
     include("../_templates/echoer.php");
-
+    
+    include("contact_writer.php");
+    
+    include("../_templates/head.php");
     head_constructor("Contatos");
     ?>
 
