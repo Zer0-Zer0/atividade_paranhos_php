@@ -121,3 +121,8 @@ input[type="text"], input[type="tel"], input[type="email"]{
     justify-content: center;
     align-items: center;
 }
+
+.no_deco, .no_deco:hover{
+    text-decoration: none;
+    color: var(--p-black-01);
+}
