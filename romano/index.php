@@ -27,8 +27,8 @@
                 <form method="post" class="formulary">
                     <label for="decimal">1-3999</label>
                     <input onchange="clamp(this,1,3999)" type="number" name="decimal" required>
-                    <input type="submit" name="send" value="Converter">
                 </form>
+                <input type="submit" name="send" value="Converter">
             </div>
 
             <div class="box">
