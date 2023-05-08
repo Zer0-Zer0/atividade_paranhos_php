@@ -12,7 +12,7 @@
 <body>
     <?php show("../_templates/header.html"); ?>
     <main>
-        <div class="center_abs">
+        <div class="center_flex flex_column">
             <form method="post" action="/login/code.php" class="box">
                 <h1>Seja bem-vindo!</h1>
 

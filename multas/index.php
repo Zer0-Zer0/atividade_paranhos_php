@@ -12,7 +12,7 @@
 <body>
     <?php show("../_templates/header.html"); ?>
     <main>
-        <div class="center_abs">
+        <div class="center_flex flex_column">
             <div class="box">
                 <h1>Calculadora de multas</h1>
 
@@ -34,7 +34,7 @@
                 <p>Resultado: </p>
 
                 <?php
-                    include("code.php");
+                include("code.php");
                 ?>
             </div>
         </div>

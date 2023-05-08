@@ -12,7 +12,7 @@
 <body>
     <?php show("../_templates/header.html"); ?>
     <main>
-        <p class="center_abs">
+        <p class="center_flex flex_column">
             Olá! Seja Bem-vindo para a atividade de desenvolvimento web, selecione uma atividade no Header.
         </p>
     </main>

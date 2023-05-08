@@ -4,11 +4,11 @@
 <head>
     <?php
     include("../_templates/echoer.php");
-    include("../_templates/head.php");
 
     include("code.php");
     include("read.php");    
 
+    include("../_templates/head.php");
     head_constructor("Calculo de média");
     ?>
     <script src="/_js/clamp.js"></script>
@@ -17,7 +17,7 @@
 <body>
     <?php show("../_templates/header.html"); ?>
 
-    <main class="fillup">
+    <main>
         <div class="center_flex flex_column">
             <div class="box">
                 <h1>

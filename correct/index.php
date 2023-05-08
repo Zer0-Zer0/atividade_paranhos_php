@@ -12,7 +12,7 @@
 <body>
     <?php show("../_templates/header.html"); ?>
     <main>
-        <h1 class="center_abs">ACESSO PERMITIDO - Bem-vindo de volta admin!</h1>
+        <h1 class="center_flex flex_column">ACESSO PERMITIDO - Bem-vindo de volta admin!</h1>
     </main>
     <?php show("../_templates/footer.html"); ?>
 </body>

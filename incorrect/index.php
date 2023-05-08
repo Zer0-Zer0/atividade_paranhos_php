@@ -12,7 +12,7 @@
 <body>
     <?php show("../_templates/header.html"); ?>
     <main>
-        <h1 class="center_abs"> ACESSO NEGADO - Usuário ou senha incorretos</h1>
+        <h1 class="center_flex flex_column"> ACESSO NEGADO - Usuário ou senha incorretos</h1>
     </main>
     <?php show("../_templates/footer.html"); ?>
 </body>
