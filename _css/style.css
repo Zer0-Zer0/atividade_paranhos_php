@@ -58,9 +58,12 @@ main {
     height: max-content;
 }
 
+
+
 label,
 input,
-p {
+p,
+a {
     margin: 1em;
 }
 
