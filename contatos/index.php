@@ -50,11 +50,11 @@
             </form>
         </div>
         <div class="contacts">
-                <?php echo_contacts(); ?>
-                <div>
-                    <button onclick="toggle(document.getElementById('create_new'))" class="add_contact"></button>
-                </div>
+            <?php echo_contacts(); ?>
+            <div>
+                <button onclick="toggle(document.getElementById('create_new'))" id="add_contact"></button>
             </div>
+        </div>
     </main>
 
     <?php
