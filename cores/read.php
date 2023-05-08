@@ -1,7 +1,7 @@
 <?php
 function read_data()
 {
-    $raw_data = file_get_contents("../_data/cores.dat");
+    $data = file_get_contents("../_data/cores.dat");
 
-    echo $raw_data;
+    echo $data? $data : "Não há nenhum aluno no banco de dados";
 }

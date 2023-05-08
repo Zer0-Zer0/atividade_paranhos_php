@@ -124,7 +124,8 @@ button:hover {
     flex-direction: column;
     justify-content: center;
 
-    width: fit-content;
+    max-width: 36em;
+
     height: fit-content;
 
     border-radius: .5em;
