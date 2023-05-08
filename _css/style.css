@@ -13,6 +13,8 @@
     --p-black-02: hsl(251, 13%, 24%);
     --p-black-03: hsl(273, 12%, 31%);
     --p-black-04: hsl(296, 8%, 40%);
+
+    --p-red: hsl(0, 83%, 44%);
 }
 
 @font-face {
@@ -62,6 +64,10 @@ p {
     margin: 1em;
 }
 
+p,h1,a{
+    color: var(--p-black-01);
+}
+
 input[type="text"],
 input[type="tel"],
 input[type="email"] {
@@ -73,7 +79,7 @@ input[type="email"] {
 }
 
 .warning {
-    color: red;
+    color: var(--p-red);
 }
 
 .box {
@@ -103,8 +109,6 @@ input[type="email"] {
 
     width: 5em;
     height: 5em;
-
-    border: 1px solid var(--p-black-01);
 
     background-color: var(--p-white-01);
     aspect-ratio: 1/1;
@@ -152,5 +156,4 @@ input[type="email"] {
 .no_deco,
 .no_deco:hover {
     text-decoration: none;
-    color: var(--p-black-01);
 }
