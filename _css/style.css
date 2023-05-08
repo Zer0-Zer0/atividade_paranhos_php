@@ -4,10 +4,10 @@
     --p-03: hsl(174, 69%, 68%);
     --p-04: hsl(186, 59%, 89%);
 
-    --p-white-01: hsl(0, 78%, 96%);
-    --p-white-02: hsl(0, 78%, 96%);
-    --p-white-03: hsl(0, 78%, 96%);
-    --p-white-04: hsl(0, 78%, 96%);
+    --p-white-01: hsl(0, 0%, 96%);
+    --p-white-02: hsl(0, 0%, 92%);
+    --p-white-03: hsl(0, 0%, 68%);
+    --p-white-04: hsl(0, 0%, 51%);
 
     --p-black-01: hsl(247, 12%, 15%);
     --p-black-02: hsl(251, 13%, 24%);
@@ -64,7 +64,11 @@ p {
     margin: 1em;
 }
 
-p,h1,a{
+p,
+h1,
+input[type="button"],
+input[type="submit"],
+a {
     color: var(--p-black-01);
 }
 
@@ -72,6 +76,34 @@ input[type="text"],
 input[type="tel"],
 input[type="email"] {
     max-width: 16em;
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+select,
+button {
+    background-color: var(--p-white-02);
+
+    border-radius: .5em;
+
+    border: 1px solid var(--p-black-04);
+}
+
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+select:hover,
+button:hover {
+    background-color: var(--p-white-03);
+
+    border-radius: .5em;
+
+    border: 1px solid var(--p-black-03);
 }
 
 .hidden {
