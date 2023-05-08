@@ -22,6 +22,13 @@
     ?>
 
     <main>
+        <div class="contacts">
+            <?php echo_contacts(); ?>
+            <div>
+                <button onclick="toggle(document.getElementById('create_new'))" id="add_contact"></button>
+            </div>
+        </div>
+
         <div class="center_flex flex_column">
             <form id="create_new" class="center_abs hidden box" method="post">
                 <h1>Novo contato</h1>
@@ -48,12 +55,6 @@
                     <input type="submit" name="send" value="criar">
                 </div>
             </form>
-        </div>
-        <div class="contacts">
-            <?php echo_contacts(); ?>
-            <div>
-                <button onclick="toggle(document.getElementById('create_new'))" id="add_contact"></button>
-            </div>
         </div>
     </main>
 
