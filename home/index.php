@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <title>Inicio</title>
 
-    <?php include("../templates/echoer.php");?>
+    <?php include("../_templates/echoer.php");?>
 
 </head>
 <body>
-    <?php show("../templates/header.html");?>
+    <?php show("../_templates/header.html");?>
     <main></main>
-    <?php show("../templates/footer.html");?>
+    <?php show("../_templates/footer.html");?>
 </body>
 </html>
