@@ -28,7 +28,7 @@
                         <label for="nome">
                             Nome completo
                         </label>
-                        <input type="text" name="nome" maxlength="64" required>
+                        <input type="text" name="nome" maxlength="16" required>
                     </div>
 
                     <div class="flex_row">
@@ -124,8 +124,8 @@
                 <?php add_classmate(); ?>
             </div>
 
-            <div class="box">
-                <p>outros alunos </p>
+            <h1>outros alunos</h1>
+            <div class="flex_grid">
                 <?php read_data();?>
             </div>
         </div>

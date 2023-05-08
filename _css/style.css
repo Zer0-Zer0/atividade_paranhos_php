@@ -137,6 +137,10 @@ button:hover {
     background-color: var(--p-white-01);
 }
 
+.square{
+    aspect-ratio: 1/1;
+}
+
 .mono {
     font: 1em "mono";
 }
@@ -168,6 +172,12 @@ button:hover {
     justify-content: space-between;
 }
 
+.flex_grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 1em;
+}
 
 .no_deco,
 .no_deco:hover {
@@ -187,17 +197,9 @@ button:hover {
     height: 5em;
 
     background-color: var(--p-white-01);
-    aspect-ratio: 1/1;
     border: 0;
 }
 
 #add_contact:hover {
     background-color: var(--p-black-03);
-}
-
-#contact_list {
-    display: flex;
-    flex-wrap: wrap;
-
-    margin: 1em;
 }

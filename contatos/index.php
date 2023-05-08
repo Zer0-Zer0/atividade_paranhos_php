@@ -23,10 +23,10 @@
 
     <main>
         <div class="center_flex flex_column">
-            <div id="contact_list">
+            <div class="flex_grid">
                 <?php echo_contacts(); ?>
                 <div>
-                    <button onclick="toggle(document.getElementById('create_new'))" id="add_contact"></button>
+                    <button onclick="toggle(document.getElementById('create_new'))" id="add_contact" class="square"></button>
                 </div>
             </div>
 

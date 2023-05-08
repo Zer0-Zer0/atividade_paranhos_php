@@ -4,21 +4,12 @@ function add_classmate()
     extract($_POST);
     if (isset($send)) {
         $file = fopen("../_data/cores.dat", "a");
-        /*
-    $data_w = ". $nome ";
-    $data_w .= "$matricula ";
-    $data_w .= "$turma ";
-    $data_w .= "$materia ";
-    $data_w .= "$unidade ";
-    $data_w .= "$n1 ";
-    $data_w .= "$n2 ";
-    $data_w .= "$n3 ";
-*/
-        $media = ($n1 + $n2 + $n3) / 3;
 
-        //  $data_w .= "$media ";
+        $media = ($n1 + $n2 + $n3) / 3;
+        $media = number_format((float)$media, 1, '.', '');
+
         $data_w = "
-    <div class='box'>
+    <div class='box square'>
         <h1>$nome</h1>
         <div class='flex_row'>
             <p class='mono'>No de matrícula</p>
