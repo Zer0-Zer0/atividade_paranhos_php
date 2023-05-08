@@ -14,7 +14,7 @@
     <main>
         <p class="center_abs">
             Olá! Seja Bem-vindo para a atividade de desenvolvimento web, selecione uma atividade no Header.
-</p>
+        </p>
     </main>
     <?php show("../_templates/footer.html"); ?>
 </body>
