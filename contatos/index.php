@@ -22,7 +22,7 @@
     ?>
 
     <main>
-        <div class="contacts">
+        <div id="contact_list">
             <?php echo_contacts(); ?>
             <div>
                 <button onclick="toggle(document.getElementById('create_new'))" id="add_contact"></button>
