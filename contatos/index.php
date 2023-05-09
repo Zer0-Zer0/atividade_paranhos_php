@@ -30,7 +30,7 @@
                     <p>Para adicionar um novo contato, clique no simbolo de soma</p>
                 </div>
                 <div>
-                    <button onclick="toggle(document.getElementById('create_new'))" id="add-contact">+</button>
+                    <button onclick="toggle(document.getElementById('create_new'))" id="add">+</button>
                 </div>
             </div>
 

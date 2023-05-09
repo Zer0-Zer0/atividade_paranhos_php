@@ -151,7 +151,7 @@ select:hover {
     text-decoration: none;
 }
 
-#add-contact {
+#add {
     font-size: 4em;
 
     color: var(--p-white-01);
@@ -160,7 +160,7 @@ select:hover {
     border: 0;
 }
 
-#add-contact:hover {
+#add:hover {
     color: var(--p-black-03);
 }
 

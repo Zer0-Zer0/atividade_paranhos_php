@@ -31,7 +31,7 @@
                     <?php add_classmate(); ?>
                 </div>
 
-                <button onclick="toggle(document.getElementById('create_new'))" id="add-contact">+</button>
+                <button onclick="toggle(document.getElementById('create_new'))" id="add">+</button>
             </div>
 
             <h1>Discentes</h1>
