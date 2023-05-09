@@ -1,24 +1,34 @@
 <?php
 function echo_contacts()
 {
-    $read = unserialize(file_get_contents('Location: contatos/dbs/contatos.bin'));
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "agenda_contatos";
 
-    if ($read) {
-        foreach ($read as $contact) {
-            echo "<div class = 'box'>
-                    <h1>$contact[0]</h1>
-                    <div class = 'flex_row'>
-                    <p class='mono'>Email</p><p class='mono'>$contact[1]</p>
-                    </div>
-                    <div class = 'flex_row'>
-                    <p class='mono'>Telefone</p><p class='mono'>$contact[2]</p>
-                    </div>
-                    <div class = 'flex_row'>
-                    <p class='mono'>Whatsapp</p><p class='mono'>$contact[3]</p>
-                    </div>
-                </div>";
-        }
-    } else {
-        echo "<p class='box'>Atualmente você não tem nenhum contato salvo nessa agenda, clique no simbolo de soma para adicionar um novo contato.</p>";
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
     }
+
+    $sql = "SELECT * FROM contato";
+    $result = $conn->query($sql);
+
+    if ($result === false) {
+        echo "Error: " . $conn->error;
+    } else {
+        while ($row = $result->fetch_assoc()) {
+            $nome = $row['nome'];
+            $email = $row['email'];
+            $fone = $row['fone'];
+
+            echo "Nome: " . $nome . "<br>";
+            echo "Email: " . $email . "<br>";
+            echo "Telefone: " . $fone . "<br>";
+            echo "<br>";
+        }
+    }
+
+    $conn->close();
 }

@@ -1,0 +1,3 @@
+ create database agenda_contatos;
+ use agenda_contatos;
+create table contato(nome char(16) not null, email char(64) not null, fone numeric(11) not null);

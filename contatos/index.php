@@ -12,7 +12,7 @@
     head_constructor("Contatos");
     ?>
 
-    <script src="/_js/toggle.js"></script>
+    <script src="../_js/toggle.js"></script>
 </head>
 
 
@@ -42,12 +42,8 @@
                     <input maxlength="64" type="email" name="email" required>
                 </div>
                 <div class="flex_row">
-                    <label for="tel"> N° telefone</label>
-                    <input maxlength="11" type="tel" name="tel" required>
-                </div>
-                <div class="flex_row">
                     <label for="zap"> N° telefone (whatsapp)</label>
-                    <input maxlength="11" type="tel" name="zap" required>
+                    <input maxlength="11" type="tel" name="tel" required>
                 </div>
 
                 <div>
