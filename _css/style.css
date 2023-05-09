@@ -153,15 +153,13 @@ select:hover {
     flex-wrap: wrap;
 }
 
-.no-deco,
-.no-deco:hover {
+.no-deco{
     text-decoration: none;
 }
 
 #add-contact {
-    font-size: 4em;
+    font-size: 4em;#out {
 
-    color: var(--p-white-01);
 
     background-color: transparent;
     border: 0;
