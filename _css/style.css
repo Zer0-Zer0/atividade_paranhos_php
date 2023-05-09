@@ -122,10 +122,6 @@ select:hover {
     background-color: var(--p-white-01);
 }
 
-.square {
-    aspect-ratio: 1/1;
-}
-
 .mono {
     font: 1em "mono";
 }
@@ -172,7 +168,7 @@ select:hover {
 
 #add_contact {
     font-size: 4em;
-    
+
     color: var(--p-white-01);
 
     background-color: transparent;

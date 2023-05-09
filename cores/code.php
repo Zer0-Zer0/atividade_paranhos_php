@@ -9,7 +9,7 @@ function add_classmate()
         $media = number_format((float)$media, 1, '.', '');
 
         $data_w = "
-    <div class='box square'>
+    <div class='box'>
         <h1>$nome</h1>
         <div class='flex_row'>
             <p class='mono'>N° de matrícula</p>
