@@ -46,7 +46,7 @@ footer {
     bottom: 0;
 }
 
-header{
+header {
     color: var(--p-white-04);
 }
 
@@ -75,13 +75,12 @@ a {
     margin: 1em;
 }
 
-input{
+input {
     max-width: 16em;
 }
 
 input,
-select,
-button {
+select {
     background-color: var(--p-white-02);
 
     border: 1px solid var(--p-black-04);
@@ -89,8 +88,7 @@ button {
 }
 
 input,
-select:hover,
-button:hover {
+select:hover {
     background-color: var(--p-white-03);
     border-color: var(--p-black-03);
 }
@@ -103,7 +101,7 @@ button:hover {
     color: var(--p-red);
 }
 
-.standard_width{
+.standard_width {
     width: 36em;
 }
 
@@ -124,7 +122,7 @@ button:hover {
     background-color: var(--p-white-01);
 }
 
-.square{
+.square {
     aspect-ratio: 1/1;
 }
 
@@ -173,23 +171,16 @@ button:hover {
 }
 
 #add_contact {
-    -webkit-mask-image: url(../_img/plus_icon.webp);
-    mask-image: url(../_img/plus_icon.webp);
+    font-size: 4em;
+    
+    color: var(--p-white-01);
 
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-
-    mask-size: contain;
-
-    width: 2em;
-    height: 2em;
-
-    background-color: var(--p-white-01);
+    background-color: transparent;
     border: 0;
 }
 
 #add_contact:hover {
-    background-color: var(--p-black-03);
+    color: var(--p-black-03);
 }
 
 #out {
