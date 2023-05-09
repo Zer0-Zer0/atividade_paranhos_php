@@ -14,8 +14,9 @@
     <?php show("../_templates/header.html"); ?>
     <main>
         <div class="center_flex flex_column">
+            <h1>Olá, Seja bem-vindo!</h1>
             <p class="box">
-                Olá! Seja Bem-vindo para a atividade de desenvolvimento web, selecione uma atividade no Header.
+                 selecione uma atividade no Header.
             </p> 
         </div>
     </main>

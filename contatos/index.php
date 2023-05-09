@@ -23,14 +23,18 @@
 
     <main>
         <div class="center_flex flex_column">
-            <h1>Agenda de contatos</h1>
+            <h1>Agenda</h1>
 
             <div class="flex_row">
-                <p class="box">Para adicionar um novo contato, clique no simbolo de soma</p>
-            <div>
+                <div class="box standard_width">
+                    <p>Para adicionar um novo contato, clique no simbolo de soma</p>
+                </div>
+                <div>
                     <button onclick="toggle(document.getElementById('create_new'))" id="add_contact" class="square"></button>
                 </div>
             </div>
+
+            <h1>Contatos</h1>
 
             <div class="flex_grid">
                 <?php echo_contacts(); ?>

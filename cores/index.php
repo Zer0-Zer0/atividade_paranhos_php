@@ -34,7 +34,7 @@
                 <button onclick="toggle(document.getElementById('create_new'))" id="add_contact" class="square"></button>
             </div>
 
-            <h1>Discentes já adicionados</h1>
+            <h1>Discentes</h1>
 
             <div class="center_flex flex_grid">
                 <?php read_data(); ?>
