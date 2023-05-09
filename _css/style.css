@@ -158,8 +158,9 @@ select:hover {
 }
 
 #add-contact {
-    font-size: 4em;#out {
+    font-size: 4em;
 
+    color: var(--p-white-01);
 
     background-color: transparent;
     border: 0;
