@@ -13,8 +13,6 @@
     --p-black-02: hsl(251, 13%, 24%);
     --p-black-03: hsl(273, 12%, 31%);
     --p-black-04: hsl(296, 8%, 40%);
-
-    --p-red: hsl(0, 83%, 44%);
 }
 
 @font-face {
@@ -103,10 +101,6 @@ select:hover {
 
 .hidden {
     display: none;
-}
-
-.warning {
-    color: var(--p-red);
 }
 
 .standard-width {
