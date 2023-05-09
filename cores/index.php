@@ -13,8 +13,8 @@
 
     ?>
 
-    <script src="/_js/toggle.js"></script>
-    <script src="/_js/clamp.js"></script>
+    <script src="../_js/toggle.js"></script>
+    <script src="../_js/clamp.js"></script>
 </head>
 
 <body>
@@ -50,13 +50,15 @@
                         <label for="nome">
                             Nome completo
                         </label>
+
                         <input type="text" name="nome" maxlength="16" required>
                     </div>
 
                     <div class="flex_row">
                         <label for="matricula">
-                            No. matrícula
+                            N° matrícula
                         </label>
+
                         <input maxlength=12 minlength=12 type="text" name="matricula" required>
                     </div>
 
@@ -64,6 +66,7 @@
                         <label for="turma">
                             Turma
                         </label>
+
                         <select name="turma">
                             <option value="ed-11">ed-11</option>
                             <option value="ed-12">ed-12</option>
@@ -93,6 +96,7 @@
                         <label for="materia">
                             Matéria
                         </label>
+
                         <select name="materia">
                             <option value="artes">artes</option>
                             <option value="biologia">biologia</option>
@@ -114,6 +118,7 @@
                         <label for="unidade">
                             Unidade
                         </label>
+
                         <select name="unidade">
                             <option value="1">primeira unidade</option>
                             <option value="2">segunda unidade</option>
@@ -122,17 +127,26 @@
                     </div>
 
                     <div class="flex_row">
-                        <label for="n1">Nota 1</label>
+                        <label for="n1">
+                            Nota 1
+                        </label>
+
                         <input onchange="clamp(this, 0, 10)" step="0.1" type="number" name="n1" required>
                     </div>
 
                     <div class="flex_row">
-                        <label for="n2">Nota 2</label>
+                        <label for="n2">
+                            Nota 2
+                        </label>
+
                         <input onchange="clamp(this, 0, 10)" step="0.1" type="number" name="n2" required>
                     </div>
 
                     <div class="flex_row">
-                        <label for="n3">Nota 3</label>
+                        <label for="n3">
+                            Nota 3
+                        </label>
+
                         <input onchange="clamp(this, 0, 10)" step="0.1" type="number" name="n3" required>
                     </div>
 

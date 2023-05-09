@@ -21,31 +21,24 @@
 
     <main>
         <div class="center_flex flex_column">
-            <h1>Números Romanos</h1>
+            <h1>
+                Número romano
+            </h1>
 
-            <div class="box standard_width">
-                <h2>Conversor</h2>
+            <div class="box center_flex">
+                <h2>Escolha o discente</h2>
 
-                <form method="post">
-                    <div class="flex_row">
-                        <label for="decimal">Insira um algarismo entre 1 e 3999</label>
-                        <input onchange="clamp(this,1,3999)" type="number" name="decimal" required>
-                    </div>
-
-                    <input type="submit" name="send" value="Converter">
-                </form>
-
-            </div>
-
-            <div class="box">
-                <div class="flex_row center_flex">
-                    <div>
-                        <?php arabic_to_roman(); ?>
-                    </div>
-                </div>
+                <a href="../romano_gustavo" class="no_deco">
+                Gustavo Costa Santos
+                </a>
+                <a href="../romano_kaique" class="no_deco">
+                Kaique Costa Nobre
+                </a>
+                <a href="../romano_kezia" class="no_deco">
+                Kezia Silva Santos
+                </a>
             </div>
         </div>
-
     </main>
     <?php show("../_templates/footer.html"); ?>
 </body>
