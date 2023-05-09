@@ -40,7 +40,7 @@
                 <?php echo_contacts(); ?>
             </div>
 
-            <form id="create_new" class="center_abs hidden box" method="post">
+            <form id="create_new" class="center_abs flex_column hidden box" method="post">
                 <h1>Novo contato</h1>
 
                 <div class="flex_row">

@@ -45,7 +45,7 @@
                     Adicionar novo discente
                 </h2>
 
-                <form method="post">
+                <form method="post" class="flex_column">
                     <div class="flex_row">
                         <label for="nome">
                             Nome completo

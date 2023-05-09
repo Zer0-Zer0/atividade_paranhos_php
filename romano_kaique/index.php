@@ -26,7 +26,7 @@
             <div class="box standard_width">
                 <h2>Conversor</h2>
 
-                <form method="post">
+                <form method="post" class="flex_column">
                     <div class="flex_row">
                         <label for="decimal">Insira um algarismo entre 1 e 3999</label>
                         <input onchange="clamp(this,1,3999)" type="number" name="decimal" required>

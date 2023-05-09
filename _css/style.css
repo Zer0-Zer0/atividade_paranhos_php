@@ -23,7 +23,16 @@
 }
 
 * {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+
     color: var(--p-black-01);
+}
+
+title {
+    display: none;
 }
 
 html,
@@ -34,7 +43,6 @@ body {
     height: 100vh;
     max-width: 100vw;
 
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
 
@@ -44,6 +52,9 @@ body {
 footer {
     position: sticky;
     bottom: 0;
+
+    padding: 1em 0em 1em 0em;
+    max-width: 100vw;
 }
 
 header {
@@ -52,12 +63,10 @@ header {
 
 header,
 footer {
-    display: flex;
-
     align-items: center;
     justify-content: space-between;
 
-    padding: 1em;
+    width: 100vw;
 
     background-color: var(--p-01);
 }
@@ -65,7 +74,6 @@ footer {
 main {
     height: max-content;
 }
-
 
 
 label,
@@ -107,7 +115,6 @@ select:hover {
 
 .box {
     flex-direction: column;
-    justify-content: center;
 
     max-width: 36em;
 
@@ -133,32 +140,17 @@ select:hover {
     transform: translate(-50%, -50%);
 }
 
-.center_flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .flex_column {
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
 .flex_row {
-    display: flex;
     flex-direction: row;
-
-    align-items: center;
     justify-content: space-between;
 }
 
 .flex_grid {
-    display: flex;
     flex-wrap: wrap;
-    align-items: center;
-
-    margin: 1em;
 }
 
 .no_deco,
