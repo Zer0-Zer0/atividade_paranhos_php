@@ -19,9 +19,11 @@
                 ACESSO NEGADO
             </h1>
 
-            <p class="box">
-                Usuário ou senha incorretos
-            </p>
+            <div class="box">
+                <p>
+                    Usuário ou senha incorretos
+                </p>
+            </div>
         </div>
     </main>
 

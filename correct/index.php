@@ -19,9 +19,11 @@
                 ACESSO PERMITIDO
             </h1>
 
-            <p class="box">
-                Bem-vindo de volta admin!
-            </p>
+            <div class="box">
+                <p>
+                    Bem-vindo de volta admin!
+                </p>
+            </div>
         </div>
     </main>
 

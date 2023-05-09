@@ -40,7 +40,7 @@
                 <?php read_data(); ?>
             </div>
 
-            <div id="create_new" class="box standard_width center_abs hidden box">
+            <div id="create_new" class="box center_abs hidden box">
                 <h2>
                     Adicionar novo discente
                 </h2>
