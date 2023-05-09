@@ -23,10 +23,18 @@ function echo_contacts()
             $email = $row['email'];
             $fone = $row['fone'];
 
-            echo "Nome: " . $nome . "<br>";
-            echo "Email: " . $email . "<br>";
-            echo "Telefone: " . $fone . "<br>";
-            echo "<br>";
+            echo '
+            <div class="box">
+                <h1>'.$nome.'</h1>
+                <div class="flex_row">
+                <p>e-mail</p>
+                    <p>'.$email.'</p>
+                </div>
+                <div class="flex_row">
+                <p>N° telefone</p>
+                    <p>'."(" . substr($fone, 0, 2) . ") " . substr($fone, 2, 5) . "-" . substr($fone, 7).'</p>
+                </div>
+            </div>';
         }
     }
 
