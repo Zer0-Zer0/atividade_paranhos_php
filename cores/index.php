@@ -21,32 +21,32 @@
     <?php show("../_templates/header.html"); ?>
 
     <main>
-        <div class="center_flex flex_column">
+        <div class="flex-column">
             <h1>
                 CORES
             </h1>
 
-            <div class="flex_row">
-                <div class="box standard_width">
+            <div class="flex-row">
+                <div class="box standard-width">
                     <?php add_classmate(); ?>
                 </div>
 
-                <button onclick="toggle(document.getElementById('create_new'))" id="add_contact">+</button>
+                <button onclick="toggle(document.getElementById('create_new'))" id="add-contact">+</button>
             </div>
 
             <h1>Discentes</h1>
 
-            <div class="center_flex flex_grid">
+            <div class="flex-grid">
                 <?php read_data(); ?>
             </div>
 
-            <div id="create_new" class="box center_abs hidden box">
+            <div id="create_new" class="box center-abs hidden box">
                 <h2>
                     Adicionar novo discente
                 </h2>
 
-                <form method="post" class="flex_column">
-                    <div class="flex_row">
+                <form method="post" class="flex-column">
+                    <div class="flex-row">
                         <label for="nome">
                             Nome completo
                         </label>
@@ -54,7 +54,7 @@
                         <input type="text" name="nome" maxlength="16" required>
                     </div>
 
-                    <div class="flex_row">
+                    <div class="flex-row">
                         <label for="matricula">
                             N° matrícula
                         </label>
@@ -62,7 +62,7 @@
                         <input maxlength=12 minlength=12 type="text" name="matricula" required>
                     </div>
 
-                    <div class="flex_row">
+                    <div class="flex-row">
                         <label for="turma">
                             Turma
                         </label>
@@ -92,7 +92,7 @@
                         </select>
                     </div>
 
-                    <div class="flex_row">
+                    <div class="flex-row">
                         <label for="materia">
                             Matéria
                         </label>
@@ -114,7 +114,7 @@
                         </select>
                     </div>
 
-                    <div class="flex_row">
+                    <div class="flex-row">
                         <label for="unidade">
                             Unidade
                         </label>
@@ -126,7 +126,7 @@
                         </select>
                     </div>
 
-                    <div class="flex_row">
+                    <div class="flex-row">
                         <label for="n1">
                             Nota 1
                         </label>
@@ -134,7 +134,7 @@
                         <input onchange="clamp(this, 0, 10)" step="0.1" type="number" name="n1" required>
                     </div>
 
-                    <div class="flex_row">
+                    <div class="flex-row">
                         <label for="n2">
                             Nota 2
                         </label>
@@ -142,7 +142,7 @@
                         <input onchange="clamp(this, 0, 10)" step="0.1" type="number" name="n2" required>
                     </div>
 
-                    <div class="flex_row">
+                    <div class="flex-row">
                         <label for="n3">
                             Nota 3
                         </label>

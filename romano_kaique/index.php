@@ -20,14 +20,14 @@
     <?php show("../_templates/header.html"); ?>
 
     <main>
-        <div class="center_flex flex_column">
+        <div class="  flex-column">
             <h1>Números Romanos</h1>
 
-            <div class="box standard_width">
+            <div class="box standard-width">
                 <h2>Conversor</h2>
 
-                <form method="post" class="flex_column">
-                    <div class="flex_row">
+                <form method="post" class="flex-column">
+                    <div class="flex-row">
                         <label for="decimal">Insira um algarismo entre 1 e 3999</label>
                         <input onchange="clamp(this,1,3999)" type="number" name="decimal" required>
                     </div>
@@ -38,7 +38,7 @@
             </div>
 
             <div class="box">
-                <div class="flex_row center_flex">
+                <div class="flex-row  ">
                     <div>
                         <?php arabic_to_roman(); ?>
                     </div>

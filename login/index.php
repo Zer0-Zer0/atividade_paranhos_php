@@ -13,23 +13,23 @@
 <body>
     <?php show("../_templates/header.html"); ?>
     <main>
-        <div class="center_flex flex_column">
+        <div class="  flex-column">
             <h1>
                 Login
             </h1>
 
-            <div class="box center_flex">
+            <div class="box  ">
                 <h2>
                     Escolha o discente
                 </h2>
 
-                <a href="../login_gustavo" class="no_deco">
+                <a href="../login_gustavo" class="no-deco">
                 Gustavo Costa Santos
                 </a>
-                <a href="../login_kaique" class="no_deco">
+                <a href="../login_kaique" class="no-deco">
                 Kaique Costa Nobre
                 </a>
-                <a href="../login_kezia" class="no_deco">
+                <a href="../login_kezia" class="no-deco">
                 Kezia Silva Santos
                 </a>
             </div>

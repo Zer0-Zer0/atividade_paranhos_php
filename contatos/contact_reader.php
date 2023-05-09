@@ -26,11 +26,11 @@ function echo_contacts()
             echo '
             <div class="box">
                 <h1>' . $nome . '</h1>
-                <div class="flex_row">
+                <div class="flex-row">
                 <p>e-mail</p>
                     <p>' . $email . '</p>
                 </div>
-                <div class="flex_row">
+                <div class="flex-row">
                 <p>N° telefone</p>
                     <p>' . "(" . substr($fone, 0, 2) . ") " . substr($fone, 2, 5) . "-" . substr($fone, 7) . '</p>
                 </div>

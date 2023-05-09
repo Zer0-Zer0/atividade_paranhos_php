@@ -16,7 +16,7 @@
     <?php show("../_templates/header.html"); ?>
 
     <main>
-        <div class="center_flex flex_column">
+        <div class="  flex-column">
             <h1>
                 ACESSO NEGADO
             </h1>

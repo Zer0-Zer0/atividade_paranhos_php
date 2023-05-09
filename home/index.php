@@ -13,7 +13,7 @@
 <body>
     <?php show("../_templates/header.html"); ?>
     <main>
-        <div class="center_flex flex_column">
+        <div class="  flex-column">
             <h1>Olá, Seja bem-vindo!</h1>
             <p class="box">
                  selecione uma atividade no Header.

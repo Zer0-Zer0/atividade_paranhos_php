@@ -109,7 +109,7 @@ select:hover {
     color: var(--p-red);
 }
 
-.standard_width {
+.standard-width {
     width: 36em;
 }
 
@@ -133,32 +133,32 @@ select:hover {
     font: 1em "mono";
 }
 
-.center_abs {
+.center-abs {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.flex_column {
+.flex-column {
     flex-direction: column;
 }
 
-.flex_row {
+.flex-row {
     flex-direction: row;
     justify-content: space-between;
 }
 
-.flex_grid {
+.flex-grid {
     flex-wrap: wrap;
 }
 
-.no_deco,
-.no_deco:hover {
+.no-deco,
+.no-deco:hover {
     text-decoration: none;
 }
 
-#add_contact {
+#add-contact {
     font-size: 4em;
 
     color: var(--p-white-01);
@@ -167,7 +167,7 @@ select:hover {
     border: 0;
 }
 
-#add_contact:hover {
+#add-contact:hover {
     color: var(--p-black-03);
 }
 
