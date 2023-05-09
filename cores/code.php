@@ -56,5 +56,7 @@ function add_classmate()
         }
 
         echo $screen_out;
+    } else {
+        echo "<p>Insira os dados de um(a) discente para mostrar o resultado da média dele(a)</p>";
     }
 }

@@ -6,7 +6,7 @@
     include("../_templates/echoer.php");
 
     include("code.php");
-    include("read.php");    
+    include("read.php");
 
     include("../_templates/head.php");
     head_constructor("Calculo de média");
@@ -19,10 +19,15 @@
 
     <main>
         <div class="center_flex flex_column">
-            <div class="box">
-                <h1>
-                    CORES
-                </h1>
+            <h1>
+                CORES
+            </h1>
+
+            <div class="box standard_width">
+            <h2>
+                Adicionar novo discente
+            </h2>
+
                 <form method="post">
                     <div class="flex_row">
                         <label for="nome">
@@ -119,14 +124,13 @@
                     </div>
                 </form>
             </div>
-            <div class="box">
-                <p>Resultado: </p>
+            <div class="box flex_row standard_width">
                 <?php add_classmate(); ?>
             </div>
 
-            <h1>outros alunos</h1>
+            <h1>outros discentes</h1>
             <div class="center_flex flex_grid">
-                <?php read_data();?>
+                <?php read_data(); ?>
             </div>
         </div>
     </main>

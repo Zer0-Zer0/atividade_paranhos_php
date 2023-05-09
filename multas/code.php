@@ -8,5 +8,7 @@ function fine_calc()
         $multa =    $delta <= 10  ? 0   : ($delta <= 50  ? 100 : ($delta <= 100 ? 150 : 200));
 
         echo $multa == 0 ? "nenhuma multa a pagar" : "O motorista tem uma multa de R$$multa.00 para pagar";
+    }else{
+        echo "<p>Insira a velocidade do veículo e da via em que ele passou para calcular a multa</p>";
     }
 }

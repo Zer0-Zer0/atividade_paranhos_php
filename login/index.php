@@ -4,7 +4,7 @@
 <head>
     <?php
     include("../_templates/echoer.php");
-    
+
     include("../_templates/head.php");
     head_constructor("Página de login");
     ?>
@@ -14,8 +14,10 @@
     <?php show("../_templates/header.html"); ?>
     <main>
         <div class="center_flex flex_column">
+            <h1>Login</h1>
+
             <form method="post" action="/login/code.php" class="box">
-                <h1>Seja bem-vindo!</h1>
+                <h2>Seja bem-vindo!</h2>
 
                 <div class="flex_row">
                     <label for="username">

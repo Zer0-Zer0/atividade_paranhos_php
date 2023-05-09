@@ -23,6 +23,8 @@
 
     <main>
         <div class="center_flex flex_column">
+            <h1>Agenda de contatos</h1>
+
             <div class="flex_grid">
                 <?php echo_contacts(); ?>
                 <div>
@@ -47,8 +49,8 @@
                 </div>
 
                 <div>
-                    <input type="reset" value="apagar">
                     <input type="submit" name="send" value="criar">
+                    <input type="reset" value="apagar">
                 </div>
             </form>
         </div>

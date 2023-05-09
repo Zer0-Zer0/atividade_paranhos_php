@@ -22,6 +22,10 @@
     src: url(../_fonts/Ubuntu-C.ttf);
 }
 
+* {
+    color: var(--p-black-01);
+}
+
 html,
 body {
     margin: 0;
@@ -67,14 +71,6 @@ a {
     margin: 1em;
 }
 
-input[type="button"],
-input[type="submit"],
-p,
-h1,
-a {
-    color: var(--p-black-01);
-}
-
 input[type="text"],
 input[type="tel"],
 input[type="email"]
@@ -118,6 +114,10 @@ button:hover {
 
 .warning {
     color: var(--p-red);
+}
+
+.standard_width{
+    width: 36em;
 }
 
 .box {

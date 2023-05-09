@@ -14,6 +14,8 @@ function arabic_to_roman()
 
         $decimal = strrev(strval($decimal));
         echo $roman_numbers[3][$decimal[3]] . $roman_numbers[2][$decimal[2]] . $roman_numbers[1][$decimal[1]] . $roman_numbers[0][$decimal[0]];
+    }else{
+        echo "<p>Insira um número entre 1 e 3999 para converter</p>";
     }
 }
 /*
