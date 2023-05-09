@@ -13,9 +13,11 @@
 <body>
     <?php show("../_templates/header.html"); ?>
     <main>
-        <p class="center_flex flex_column">
-            Olá! Seja Bem-vindo para a atividade de desenvolvimento web, selecione uma atividade no Header.
-        </p>
+        <div class="center_flex flex_column">
+            <p class="box">
+                Olá! Seja Bem-vindo para a atividade de desenvolvimento web, selecione uma atividade no Header.
+            </p> 
+        </div>
     </main>
     <?php show("../_templates/footer.html"); ?>
 </body>
