@@ -26,15 +26,19 @@
             <div class="box standard_width">
                 <h2>Conversor</h2>
 
-                <form method="post" class="flex_row">
-                    <label for="decimal">Insira um algarismo entre 1 e 3999</label>
-                    <input onchange="clamp(this,1,3999)" type="number" name="decimal" required>
+                <form method="post">
+                    <div class="flex_row">
+                        <label for="decimal">Insira um algarismo entre 1 e 3999</label>
+                        <input onchange="clamp(this,1,3999)" type="number" name="decimal" required>
+                    </div>
+
+                    <input type="submit" name="send" value="Converter">
                 </form>
-                <input type="submit" name="send" value="Converter">
+
             </div>
 
-            <div class="box standard_width">
-                <div class="flex_row">
+            <div class="box">
+                <div class="flex_row center_flex">
                     <div>
                         <?php arabic_to_roman(); ?>
                     </div>
