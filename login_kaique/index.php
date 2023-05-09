@@ -16,7 +16,7 @@
         <div class="center_flex flex_column">
             <h1>Login</h1>
 
-            <form method="post" action="code.php" class="box">
+            <form method="post" action="/login_kaique/code.php" class="box">
                 <h2>Seja bem-vindo!</h2>
 
                 <div class="flex_row">

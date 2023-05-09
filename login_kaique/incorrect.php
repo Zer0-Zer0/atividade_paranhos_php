@@ -6,8 +6,10 @@
     include("../_templates/echoer.php");
 
     include("../_templates/head.php");
-    head_constructor("Acesso permitido");
+    head_constructor("Acesso negado");
     ?>
+
+    <link rel="stylesheet" href="../../_css/style.css">
 </head>
 
 <body>
@@ -16,12 +18,12 @@
     <main>
         <div class="center_flex flex_column">
             <h1>
-                ACESSO PERMITIDO
+                ACESSO NEGADO
             </h1>
 
             <div class="box">
                 <p>
-                    Bem-vindo de volta admin!
+                    Usuário ou senha incorretos
                 </p>
             </div>
         </div>
