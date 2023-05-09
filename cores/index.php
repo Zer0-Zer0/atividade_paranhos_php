@@ -10,7 +10,10 @@
 
     include("../_templates/head.php");
     head_constructor("Calculo de média");
+
     ?>
+
+    <script src="/_js/toggle.js"></script>
     <script src="/_js/clamp.js"></script>
 </head>
 
@@ -23,10 +26,24 @@
                 CORES
             </h1>
 
-            <div class="box standard_width">
-            <h2>
-                Adicionar novo discente
-            </h2>
+            <div class="flex_row">
+                <div class="box standard_width">
+                    <?php add_classmate(); ?>
+                </div>
+
+                <button onclick="toggle(document.getElementById('create_new'))" id="add_contact" class="square"></button>
+            </div>
+
+            <h1>Discentes já adicionados</h1>
+
+            <div class="center_flex flex_grid">
+                <?php read_data(); ?>
+            </div>
+
+            <div id="create_new" class="box standard_width center_abs hidden box">
+                <h2>
+                    Adicionar novo discente
+                </h2>
 
                 <form method="post">
                     <div class="flex_row">
@@ -123,14 +140,6 @@
                         <input type="submit" name="send" value="enviar">
                     </div>
                 </form>
-            </div>
-            <div class="box flex_row standard_width">
-                <?php add_classmate(); ?>
-            </div>
-
-            <h1>outros discentes</h1>
-            <div class="center_flex flex_grid">
-                <?php read_data(); ?>
             </div>
         </div>
     </main>

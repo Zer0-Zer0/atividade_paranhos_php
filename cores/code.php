@@ -3,7 +3,7 @@ function add_classmate()
 {
     extract($_POST);
     if (isset($send)) {
-        $file = fopen("../_data/cores.dat", "a");
+        $file = fopen("cores.dat", "a");
 
         $media = ($n1 + $n2 + $n3) / 3;
         $media = number_format((float)$media, 1, '.', '');
