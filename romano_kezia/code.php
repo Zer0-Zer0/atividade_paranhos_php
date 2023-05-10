@@ -27,9 +27,5 @@ function converter_romano($numero)
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $numero = $_POST['numero'];
-    if ($numero >= 1 && $numero <= 3999) {
-        $romano = converter_romano($numero);
-    } else {
-        $erro = "Por favor, insira um número entre 1 e 3999.";
-    }
+    $romano = converter_romano($numero);
 }

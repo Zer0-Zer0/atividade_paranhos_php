@@ -170,7 +170,3 @@ select:hover {
 #add:hover {
     color: var(--p-black-03);
 }
-
-#out {
-    font-size: 2em;
-}

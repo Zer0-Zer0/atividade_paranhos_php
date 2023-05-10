@@ -20,22 +20,22 @@
     <?php show("../_templates/header.html"); ?>
 
     <main>
-        <div class="  flex-column">
+        <div class="flex-column">
             <h1>
-                Número romano
+                Números romanos
             </h1>
 
-            <div class="box  ">
+            <div class="box">
                 <h2>Escolha o discente</h2>
 
                 <a href="../romano_gustavo" class="no-deco">
-                Gustavo Costa Santos
+                    Gustavo Costa Santos
                 </a>
                 <a href="../romano_kaique" class="no-deco">
-                Kaique Costa Nobre
+                    Kaique Costa Nobre
                 </a>
                 <a href="../romano_kezia" class="no-deco">
-                Kezia Silva Santos
+                    Kezia Silva Santos
                 </a>
             </div>
         </div>

@@ -29,7 +29,7 @@ function arabic_to_roman()
                 break;
         }
 
-        echo "<p id='out'>$out</p>";
+        echo "<p>$out</p>";
 
         
     } else {

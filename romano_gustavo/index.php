@@ -2,56 +2,49 @@
 <html lang="pt-BR">
 
 <head>
-	<title>Conversor de números naturais para romanos</title>
+	<?php
+	include("../_templates/echoer.php");
+
+
+	
+	include("../_templates/head.php");
+	head_constructor("Conversor de números naturais para romanos");
+	?>
+
+	<script src="../_js/clamp.js"></script>
 </head>
 
 <body>
-	<form method="POST">
-		<label>Digite um número natural:</label>
-		<input type="text" name="numero">
-		<button type="submit">Converter</button>
-	</form>
-	<?php
-	function converter_para_romano($numero)
-	{
-		$romano = '';
-		$numeros_romanos = array(
-			'M' => 1000,
-			'CM' => 900,
-			'D' => 500,
-			'CD' => 400,
-			'C' => 100,
-			'XC' => 90,
-			'L' => 50,
-			'XL' => 40,
-			'X' => 10,
-			'IX' => 9,
-			'V' => 5,
-			'IV' => 4,
-			'I' => 1
-		);
-		foreach ($numeros_romanos as $romano_atual => $valor) {
-			while ($numero >= $valor) {
-				$romano .= $romano_atual;
-				$numero -= $valor;
-			}
-		}
-		return $romano;
-	}
+	<?php show("../_templates/header.html"); ?>
 
-	if (isset($_POST['numero'])) {
-		$numero = intval($_POST['numero']);
-		if ($numero >= 1 && $numero <= 3999) {
-			$romano = converter_para_romano($numero);
-			echo '<p>O número ' . $_POST['numero'] . ' em algarismos romanos é: ' . $romano . '</p>';
-		} else {
-			echo '<p>Por favor, digite um número entre 1 e 3999.</p>';
-		}
-	}
-	?>
-	<footer>
-		<p>Site feito por Gustavo Costa Santos da EI-32</p>
-	</footer>
+	<main>
+		<div class="flex-column">
+			<h1>Números Romanos</h1>
+
+			<div class="box standard-width">
+				<form method="post" class="flex-column spaced-between">
+					<div class="flex-row spaced-between">
+						<label for="numero">
+							Digite um número natural
+						</label>
+						
+                        <input onchange="clamp(this,1,3999)" type="number" name="numero" required>
+					</div>
+
+					<div class="flex-row spaced-between">
+						<input type="submit" value="Converter">
+					</div>
+				</form>
+			</div>
+
+			<div class="box">
+				<?php include("code.php"); ?>
+			</div>
+		</div>
+
+	</main>
+
+	<?php show("../_templates/footer.html"); ?>
 </body>
 
 </html>

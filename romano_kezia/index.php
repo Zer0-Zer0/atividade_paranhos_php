@@ -18,18 +18,34 @@
     <?php show("../_templates/header.html"); ?>
 
     <main>
-        <h1>Conversor de Números Romanos</h1>
-        <?php if (isset($erro)) {
-            echo '<p>$erro</p>';
-        } ?>
-        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-            <label for="numero">Insira um número entre 1 e 3999:</label>
-            <input type="number" name="numero" id="numero" min="1" max="3999" required>
-            <button type="submit">Converter</button>
-        </form>
-        <?php if (isset($romano)) { ?>
-            <p>O número <?php echo $numero; ?> em algarismos romanos é: <?php echo $romano; ?></p>
-        <?php } ?>
+        <div class="flex-column">
+            <h1>Números Romanos</h1>
+
+            <div class="box standard-width">
+                <form method="post" class="flex-column spaced-between">
+                    <div class="flex-row spaced-between">
+                        <label for="numero">
+                            Insira um número entre 1 e 3999
+                        </label>
+
+                        <input onchange="clamp(this,1,3999)" type="number" name="numero" required>
+                    </div>
+
+                    <div class="flex-row spaced-between">
+                        <input type="submit" value="Converter">
+                    </div>
+                </form>
+            </div>
+
+            <?php
+            if (isset($romano)) {
+                echo "
+                    <div class='box flex-column'>
+                        <p>O número $numero em algarismos romanos é $romano</p>
+                    </div>";
+            }
+            ?>
+        </div>
     </main>
 
     <?php show("../_templates/footer.html"); ?>
