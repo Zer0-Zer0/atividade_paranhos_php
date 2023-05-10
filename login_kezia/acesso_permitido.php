@@ -6,7 +6,7 @@
     include("../_templates/echoer.php");
 
     include("../_templates/head.php");
-    head_constructor("Acesso negado");
+    head_constructor("acesso permitido");
     ?>
 </head>
 
@@ -16,15 +16,8 @@
     <main>
         <div class="flex-column">
             <h1>
-                ACESSO NEGADO
+                Acesso permitido!
             </h1>
-
-            <div class="box">
-                <p>
-                    Usuário ou senha incorretos
-                </p>
-            </div>
-        </div>
     </main>
 
     <?php show("../_templates/footer.html"); ?>

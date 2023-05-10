@@ -8,15 +8,13 @@
     include("../_templates/head.php");
     head_constructor("Acesso permitido");
     ?>
-
-    <link rel="stylesheet" href="../../_css/style.css">
 </head>
 
 <body>
     <?php show("../_templates/header.html"); ?>
 
     <main>
-        <div class="  flex-column">
+        <div class="flex-column">
             <h1>
                 ACESSO PERMITIDO
             </h1>

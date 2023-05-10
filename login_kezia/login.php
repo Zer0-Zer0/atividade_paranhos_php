@@ -13,10 +13,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   
   if (isset($usuarios[$username]) && $usuarios[$username] === $password) {
     $_SESSION['usuario'] = $username;
-    header('Location: acesso_permitido.html');
+    header('Location: acesso_permitido.php');
     exit;
   } else {
-    header('Location: acesso_negado.html');
+    header('Location: acesso_negado.php');
     exit;
   }
 }
