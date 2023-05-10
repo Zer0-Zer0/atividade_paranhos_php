@@ -24,13 +24,13 @@ function echo_contacts()
             $fone = $row['fone'];
 
             echo '
-            <div class="box">
+            <div class="box flex-column">
                 <h1>' . $nome . '</h1>
-                <div class="flex-row">
+                <div class="flex-row spaced-between">
                 <p>e-mail</p>
                     <p>' . $email . '</p>
                 </div>
-                <div class="flex-row">
+                <div class="flex-row spaced-between">
                 <p>N° telefone</p>
                     <p>' . "(" . substr($fone, 0, 2) . ") " . substr($fone, 2, 5) . "-" . substr($fone, 7) . '</p>
                 </div>

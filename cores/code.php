@@ -11,35 +11,35 @@ function add_classmate()
         $data_w = "
     <div class='box'>
         <h1>$nome</h1>
-        <div class='flex-row'>
+        <div class='flex-row spaced-between'>
             <p class='mono'>N° de matrícula</p>
             <p class='mono'>$matricula</p>
         </div>
-        <div class='flex-row'>
+        <div class='flex-row spaced-between'>
             <p class='mono'>Turma</p>
             <p class='mono'>$turma</p>
         </div>
-        <div class='flex-row'>
+        <div class='flex-row spaced-between'>
             <p class='mono'>Materia</p>
             <p class='mono'>$materia</p>
         </div>
-        <div class='flex-row'>
+        <div class='flex-row spaced-between'>
             <p class='mono'>Unidade</p>
             <p class='mono'>$unidade</p>
         </div>
-        <div class='flex-row'>
+        <div class='flex-row spaced-between'>
             <p class='mono'>Média aritmetica </p>
             <p class='mono'>$media</p>
         </div>
-        <div class='flex-row'>
+        <div class='flex-row spaced-between'>
             <p class='mono'>Nota 1</p>
             <p class='mono'>$n1</p>
         </div>
-        <div class='flex-row'>
+        <div class='flex-row spaced-between'>
             <p class='mono'>Nota 2</p>
             <p class='mono'>$n2</p>
         </div>
-        <div class='flex-row'>
+        <div class='flex-row spaced-between'>
             <p class='mono'>Nota 3</p>
             <p class='mono'>$n3</p>
         </div>

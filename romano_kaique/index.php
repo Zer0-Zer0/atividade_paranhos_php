@@ -27,7 +27,7 @@
                 <h2>Conversor</h2>
 
                 <form method="post" class="flex-column">
-                    <div class="flex-row">
+                    <div class="flex-row spaced-between">
                         <label for="decimal">Insira um algarismo entre 1 e 3999</label>
                         <input onchange="clamp(this,1,3999)" type="number" name="decimal" required>
                     </div>
@@ -38,7 +38,7 @@
             </div>
 
             <div class="box">
-                <div class="flex-row  ">
+                <div class="flex-row spaced-between  ">
                     <div>
                         <?php arabic_to_roman(); ?>
                     </div>

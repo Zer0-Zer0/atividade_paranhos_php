@@ -30,7 +30,7 @@
                     <p>Para adicionar um novo contato, clique no simbolo de soma</p>
                 </div>
                 <div>
-                    <button onclick="toggle(document.getElementById('create_new'))" id="add">+</button>
+                    <button onclick="toggle(document.getElementById('create-new'))" id="add">+</button>
                 </div>
             </div>
 
@@ -40,18 +40,18 @@
                 <?php echo_contacts(); ?>
             </div>
 
-            <form id="create_new" class="center-abs flex-column hidden box" method="post">
+            <form id="create-new" class="center-abs flex-column hidden box" method="post">
                 <h1>Novo contato</h1>
 
-                <div class="flex-row">
+                <div class="flex-row spaced-between">
                     <label for="nome">Nome</label>
                     <input maxlength="16" type="text" name="name" required>
                 </div>
-                <div class="flex-row">
+                <div class="flex-row spaced-between">
                     <label for="email">Email</label>
                     <input maxlength="64" type="email" name="email" required>
                 </div>
-                <div class="flex-row">
+                <div class="flex-row spaced-between">
                     <label for="zap"> N° telefone (whatsapp)</label>
                     <input maxlength="11" type="tel" name="tel" required>
                 </div>

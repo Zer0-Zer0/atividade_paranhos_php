@@ -22,7 +22,7 @@
 
 * {
     display: flex;
-    
+
     justify-content: center;
     align-items: center;
 
@@ -73,7 +73,6 @@ main {
     height: max-content;
 }
 
-
 label,
 input,
 p,
@@ -81,19 +80,23 @@ a {
     margin: 1em;
 }
 
-input {
-    max-width: 16em;
-}
-
 input,
 select {
+    width: 16em;
+
     background-color: var(--p-white-02);
 
     border: 1px solid var(--p-black-04);
     border-radius: .5em;
 }
 
-input,
+
+input[type="submit"] {
+    width: fit-content;
+}
+
+
+input:hover,
 select:hover {
     background-color: var(--p-white-03);
     border-color: var(--p-black-03);
@@ -140,14 +143,18 @@ select:hover {
 
 .flex-row {
     flex-direction: row;
+}
+
+.spaced-between {
     justify-content: space-between;
+    width: 100%;
 }
 
 .flex-grid {
     flex-wrap: wrap;
 }
 
-.no-deco{
+.no-deco {
     text-decoration: none;
 }
 

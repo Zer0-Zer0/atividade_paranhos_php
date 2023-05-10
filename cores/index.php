@@ -31,7 +31,7 @@
                     <?php add_classmate(); ?>
                 </div>
 
-                <button onclick="toggle(document.getElementById('create_new'))" id="add">+</button>
+                <button onclick="toggle(document.getElementById('create-new'))" id="add">+</button>
             </div>
 
             <h1>Discentes</h1>
@@ -40,13 +40,13 @@
                 <?php read_data(); ?>
             </div>
 
-            <div id="create_new" class="box center-abs hidden box">
+            <div id="create-new" class="box center-abs hidden box">
                 <h2>
                     Adicionar novo discente
                 </h2>
 
                 <form method="post" class="flex-column">
-                    <div class="flex-row">
+                    <div class="flex-row spaced-between">
                         <label for="nome">
                             Nome completo
                         </label>
@@ -54,7 +54,7 @@
                         <input type="text" name="nome" maxlength="16" required>
                     </div>
 
-                    <div class="flex-row">
+                    <div class="flex-row spaced-between">
                         <label for="matricula">
                             N° matrícula
                         </label>
@@ -62,7 +62,7 @@
                         <input maxlength=12 minlength=12 type="text" name="matricula" required>
                     </div>
 
-                    <div class="flex-row">
+                    <div class="flex-row spaced-between">
                         <label for="turma">
                             Turma
                         </label>
@@ -92,7 +92,7 @@
                         </select>
                     </div>
 
-                    <div class="flex-row">
+                    <div class="flex-row spaced-between">
                         <label for="materia">
                             Matéria
                         </label>
@@ -114,7 +114,7 @@
                         </select>
                     </div>
 
-                    <div class="flex-row">
+                    <div class="flex-row spaced-between">
                         <label for="unidade">
                             Unidade
                         </label>
@@ -126,7 +126,7 @@
                         </select>
                     </div>
 
-                    <div class="flex-row">
+                    <div class="flex-row spaced-between">
                         <label for="n1">
                             Nota 1
                         </label>
@@ -134,7 +134,7 @@
                         <input onchange="clamp(this, 0, 10)" step="0.1" type="number" name="n1" required>
                     </div>
 
-                    <div class="flex-row">
+                    <div class="flex-row spaced-between">
                         <label for="n2">
                             Nota 2
                         </label>
@@ -142,7 +142,7 @@
                         <input onchange="clamp(this, 0, 10)" step="0.1" type="number" name="n2" required>
                     </div>
 
-                    <div class="flex-row">
+                    <div class="flex-row spaced-between">
                         <label for="n3">
                             Nota 3
                         </label>
