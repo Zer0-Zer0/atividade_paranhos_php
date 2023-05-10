@@ -1,6 +1,7 @@
 <?php
 
-function converter_romano($numero) {
+function converter_romano($numero)
+{
     $valores = array(
         "M" => 1000,
         "CM" => 900,
@@ -37,16 +38,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
+
 <head>
     <title>Conversor de Números Romanos</title>
 </head>
+
 <body>
     <h1>Conversor de Números Romanos</h1>
     <?php if (isset($erro)) { ?>
         <p><?php echo $erro; ?></p>
     <?php } ?>
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         <label for="numero">Insira um número entre 1 e 3999:</label>
         <input type="number" name="numero" id="numero" min="1" max="3999" required>
         <button type="submit">Converter</button>
@@ -55,4 +58,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <p>O número <?php echo $numero; ?> em algarismos romanos é: <?php echo $romano; ?></p>
     <?php } ?>
 </body>
+<footer>
+    <p>Site feito por Kézia Silva Santos da EI-32</p>
+</footer>
+
 </html>

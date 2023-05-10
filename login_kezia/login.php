@@ -1,4 +1,3 @@
-<!-- login.php -->
 <?php
 $usuarios = array(
   'usuario1' => 'senha1',
