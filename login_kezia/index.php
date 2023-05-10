@@ -6,43 +6,41 @@
     include("../_templates/echoer.php");
 
     include("../_templates/head.php");
-    head_constructor("Página de login");
+    head_constructor("Login");
     ?>
 </head>
 
 <body>
     <?php show("../_templates/header.html"); ?>
-    
+
     <main>
         <div class="flex-column">
             <h1>Login</h1>
 
-            <form method="post" action="/login_kaique/code.php" class="box">
-                <h2>Seja bem-vindo!</h2>
-
+            <form method="post" action="/login_kezia/login.php" class="box">
                 <div class="flex-row spaced-between">
                     <label for="username">
-                        Usuário
+                        Username
                     </label>
 
-                    <input type="text" name="username">
+                    <input type="text" id="username" name="username">
                 </div>
 
                 <div class="flex-row spaced-between">
                     <label for="password">
-                        Senha
+                        Password
                     </label>
 
-                    <input type="password" name="password">
+                    <input type="password" id="password" name="password">
                 </div>
 
                 <div class="flex-row spaced-between">
-                    <input type="submit" name="send" value="Entrar">
+                    <input type="submit" value="Login">
                 </div>
             </form>
         </div>
     </main>
-    
+
     <?php show("../_templates/footer.html"); ?>
 </body>
 
