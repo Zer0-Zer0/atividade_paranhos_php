@@ -23,34 +23,45 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 <!DOCTYPE html>
-<html>
-<head>
-  <?php include("../_templates/echoer.php")?>
+<html lang="pt-BR">
 
-  <title>Página de Login</title>
-</head>
-<body>
-<?php
-  show("../_templates/header.html");
-  ?>
-<main>
-  <h2>Por favor, faça o login</h2>
+<head>
   <?php
-  // Exibe uma mensagem de erro se houver algum erro
-  if (isset($erro)) {
-    echo "<p style='color: red;'>$erro</p>";
-  }
+  include("../_templates/echoer.php");
+
+  include("../_templates/head.php");
+  head_constructor("Página de login");
   ?>
-  <form method="post">
-<label for="username">Nome de usuário:</label>
-    <input type="text" id="username" name="username"><br><br>
-    <label for="password">Senha:</label>
-    <input type="password" id="password" name="password"><br><br>
-    <input type="submit" value="Login">
-  </form>
-</main>
-<footer>
-  Site feito por Gustavo Costa Santos da EI-32
-</footer>
+</head>
+
+<body>
+  <?php show("../_templates/header.html"); ?>
+  <main>
+    <div class="flex-column">
+      <h2>Por favor, faça o login</h2>
+      <form method="post" class="box flex-column">
+        <div class="flex-row spaced-between">
+          <label for="username">Nome de usuário:</label>
+          <input type="text" id="username" name="username">
+        </div>
+        <div class="flex-row spaced-between">
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password">
+        </div>
+        <div class="flex-row spaced-between">
+          <input type="submit" value="Login">
+        </div>
+        <?php
+        if (isset($erro)) {
+          echo "<p style='color: red;'>$erro</p>";
+        }
+        ?>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <p>Site feito por Gustavo Costa Santos da EI-32</p>
+  </footer>
 </body>
+
 </html>

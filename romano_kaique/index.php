@@ -12,8 +12,6 @@
     ?>
 
     <script src="../_js/clamp.js"></script>
-
-    <link rel="stylesheet" href="/romano/style.css">
 </head>
 
 <body>

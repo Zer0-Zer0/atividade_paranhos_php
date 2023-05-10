@@ -13,7 +13,7 @@
 <body>
     <?php show("../_templates/header.html"); ?>
     <main>
-        <div class="  flex-column">
+        <div class="flex-column">
             <h1>Login</h1>
 
             <form method="post" action="/login_kaique/code.php" class="box">
